@@ -1,0 +1,641 @@
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 build/us_n64/actors/group0.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x4000000
+LOAD build/us_n64/actors/group0.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x400000))
+                0x0000000000400000                . = SEGMENT_START ("text-segment", 0x400000)
+
+.interp
+ *(.interp)
+
+.MIPS.abiflags  0x0000000000400000       0x18
+ *(.MIPS.abiflags)
+ .MIPS.abiflags
+                0x0000000000400000       0x18 build/us_n64/actors/group0.o
+
+.reginfo        0x0000000000400018       0x18
+ *(.reginfo)
+ .reginfo       0x0000000000400018       0x18 build/us_n64/actors/group0.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.dynamic
+ *(.dynamic)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000000400030        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.dyn)
+ .rel.dyn       0x0000000000400030        0x0 build/us_n64/actors/group0.o
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rel_iplt_start = .)
+ *(.rel.iplt)
+                [!provide]                        PROVIDE (__rel_iplt_end = .)
+
+.rela.dyn       0x0000000000400030        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start = .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end = .)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+
+.text           0x0000000004000000        0x0
+                0x0000000004000000                _ftext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000004000000        0x0 build/us_n64/actors/group0.o
+ *(.gnu.warning)
+ *(.mips16.fn.*)
+ *(.mips16.call.*)
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+
+.rodata1
+ *(.rodata1)
+
+.sdata2
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+
+.sbss2
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000004000000                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000004000000        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000004000000        0x0
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                [!provide]                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000004000000        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+                0x0000000004000000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000004000000    0x28e90
+                0x0000000004000000                _fdata = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000004000000    0x28e90 build/us_n64/actors/group0.o
+                0x0000000004000000                sparkles_animation_seg4_dl_04035360
+                0x0000000004000018                sparkles_animation_seg4_dl_04035348
+                0x0000000004000030                sparkles_animation_seg4_dl_04035330
+                0x0000000004000048                sparkles_animation_seg4_dl_04035318
+                0x0000000004000060                sparkles_animation_seg4_dl_04035300
+                0x0000000004000078                sparkles_animation_seg4_dl_04035288
+                0x0000000004002930                white_particle_small_unused_dl
+                0x0000000004002948                white_particle_small_dl
+                0x0000000004002960                white_particle_small_dl_end
+                0x0000000004002990                white_particle_small_dl_begin
+                0x0000000004002c70                water_splash_seg4_dl_040326E8
+                0x0000000004002c88                water_splash_seg4_dl_040326D0
+                0x0000000004002ca0                water_splash_seg4_dl_040326B8
+                0x0000000004002cb8                water_splash_seg4_dl_040326A0
+                0x0000000004002cd0                water_splash_seg4_dl_04032688
+                0x0000000004002ce8                water_splash_seg4_dl_04032670
+                0x0000000004002d00                water_splash_seg4_dl_04032658
+                0x0000000004002d18                water_splash_seg4_dl_04032640
+                0x0000000004002d30                water_splash_seg4_dl_040325C8
+                0x000000000400ade8                sparkles_seg4_dl_0402A570
+                0x000000000400ae00                sparkles_seg4_dl_0402A558
+                0x000000000400ae18                sparkles_seg4_dl_0402A540
+                0x000000000400ae30                sparkles_seg4_dl_0402A528
+                0x000000000400ae48                sparkles_seg4_dl_0402A510
+                0x000000000400ae60                sparkles_seg4_dl_0402A4F8
+                0x000000000400ae78                sparkles_seg4_dl_0402A490
+                0x000000000400df20                water_wave_seg4_dl_04027438
+                0x000000000400df38                water_wave_seg4_dl_04027420
+                0x000000000400df50                water_wave_seg4_dl_04027408
+                0x000000000400df68                water_wave_seg4_dl_040273F0
+                0x000000000400df80                water_wave_seg4_dl_040273D8
+                0x000000000400df98                water_wave_seg4_dl_040273A0
+                0x000000000400dfc8                water_wave_seg4_dl_04027358
+                0x0000000004010050                small_water_splash_seg4_dl_5
+                0x0000000004010068                small_water_splash_seg4_dl_4
+                0x0000000004010080                small_water_splash_seg4_dl_3
+                0x0000000004010098                small_water_splash_seg4_dl_2
+                0x00000000040100b0                small_water_splash_seg4_dl_1
+                0x00000000040100c8                small_water_splash_seg4_dl_0
+                0x00000000040100e0                small_water_splash_seg4_sub_dl_model
+                0x00000000040100f8                small_water_splash_seg4_sub_dl_end
+                0x0000000004010128                small_water_splash_seg4_sub_dl_start
+                0x00000000040131b0                burn_smoke_seg4_dl
+                0x0000000004013208                burn_smoke_seg4_sub_dl_end
+                0x0000000004013230                burn_smoke_seg4_sub_dl_model
+                0x0000000004013248                burn_smoke_seg4_sub_dl_begin
+                0x0000000004013ab0                smoke_seg4_dl_040217A8
+                0x0000000004013ac8                smoke_seg4_dl_04021790
+                0x0000000004013ae0                smoke_seg4_dl_04021778
+                0x0000000004013af8                smoke_seg4_dl_04021760
+                0x0000000004013b10                smoke_seg4_dl_04021748
+                0x0000000004013b28                smoke_seg4_dl_04021730
+                0x0000000004013b40                smoke_seg4_dl_04021718
+                0x0000000004013b58                smoke_seg4_dl_040216A0
+                0x0000000004017410                bubble_seg4_dl_0401DDE0
+                0x0000000004017490                bubble_seg4_dl_0401DD60
+                0x0000000004018550                mario_000_displaylist_005_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040185e0                mario_000_displaylist_005_mesh_layer_1
+                0x00000000040185f8                mario_000_offset_013_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018618                mario_000_offset_013_mesh_layer_1
+                0x0000000004018630                mario_000_offset_012_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018650                mario_000_offset_012_mesh_layer_1
+                0x0000000004018668                mario_000_offset_011_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018688                mario_000_offset_011_mesh_layer_1
+                0x00000000040186a0                mario_000_offset_010_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040186c0                mario_000_offset_010_mesh_layer_1
+                0x00000000040186d8                mario_000_offset_009_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040186f8                mario_000_offset_009_mesh_layer_1
+                0x0000000004018710                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4_mat_override_metal_v3_001_0
+                0x0000000004018780                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4
+                0x00000000040187b8                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040187e8                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1
+                0x0000000004018828                mario_005_switch_option_left_hand_cap_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018858                mario_005_switch_option_left_hand_cap_mesh_layer_1
+                0x0000000004018898                mario_004_switch_option_left_hand_peace_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040188b8                mario_004_switch_option_left_hand_peace_mesh_layer_1
+                0x00000000040188d0                mario_002_switch_option_left_hand_open_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040188f0                mario_002_switch_option_left_hand_open_mesh_layer_1
+                0x0000000004018908                mario_000_displaylist_004_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018928                mario_000_displaylist_004_mesh_layer_1
+                0x0000000004018940                mario_000_offset_007_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018960                mario_000_offset_007_mesh_layer_1
+                0x0000000004018980                mario_000_offset_006_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040189a0                mario_000_offset_006_mesh_layer_1
+                0x00000000040189c0                mario_002_switch_option_right_hand_open_mesh_layer_1_mat_override_metal_v3_001_0
+                0x00000000040189e0                mario_002_switch_option_right_hand_open_mesh_layer_1
+                0x00000000040189f8                mario_000_displaylist_003_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018a18                mario_000_displaylist_003_mesh_layer_1
+                0x0000000004018a30                mario_000_offset_004_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018a50                mario_000_offset_004_mesh_layer_1
+                0x0000000004018a70                mario_000_offset_003_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018a90                mario_000_offset_003_mesh_layer_1
+                0x0000000004018ab0                mario_000_displaylist_002_mesh_layer_4_mat_override_metal_v3_001_0
+                0x0000000004018ae8                mario_000_displaylist_002_mesh_layer_4
+                0x0000000004018b20                mario_000_displaylist_001_mesh_layer_4_mat_override_metal_v3_001_0
+                0x0000000004018b58                mario_000_displaylist_001_mesh_layer_4
+                0x0000000004018b90                mario_002_switch_option_head__no_cap__mesh_layer_1_mat_override_face_7___eye_X_v3_001_3
+                0x0000000004018bd8                mario_002_switch_option_head__no_cap__mesh_layer_1_mat_override_face_2___eye_closed_v3_001_2
+                0x0000000004018c20                mario_002_switch_option_head__no_cap__mesh_layer_1_mat_override_face_1___eye_half_v3_001_1
+                0x0000000004018c70                mario_002_switch_option_head__no_cap__mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018ca8                mario_002_switch_option_head__no_cap__mesh_layer_1
+                0x0000000004018cf8                mario_000_displaylist_mesh_layer_1_mat_override_face_7___eye_X_v3_001_3
+                0x0000000004018d58                mario_000_displaylist_mesh_layer_1_mat_override_face_2___eye_closed_v3_001_2
+                0x0000000004018db8                mario_000_displaylist_mesh_layer_1_mat_override_face_1___eye_half_v3_001_1
+                0x0000000004018e20                mario_000_displaylist_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018e60                mario_000_displaylist_mesh_layer_1
+                0x0000000004018ec8                mario_000_offset_001_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018ef0                mario_000_offset_001_mesh_layer_1
+                0x0000000004018f20                mario_000_offset_mesh_layer_1_mat_override_metal_v3_001_0
+                0x0000000004018f40                mario_000_offset_mesh_layer_1
+                0x0000000004018f58                mat_mario_shoes_v3_001
+                0x0000000004018f98                mat_mario_cap_inside
+                0x0000000004018fd8                mat_mario_gloves_v3_001
+                0x0000000004019018                mat_revert_mario_wing_1_v3_001
+                0x0000000004019030                mat_mario_wing_1_v3_001
+                0x0000000004019080                mat_revert_mario_wing_2_v3_001
+                0x0000000004019098                mat_mario_wing_2_v3_001
+                0x00000000040190e8                mat_mario_face_7___eye_X_v3_001
+                0x0000000004019150                mat_mario_face_2___eye_closed_v3_001
+                0x00000000040191b8                mat_revert_mario_face_1___eye_half_v3_001
+                0x00000000040191d0                mat_mario_face_1___eye_half_v3_001
+                0x0000000004019258                mat_mario_sideburns_v3_001
+                0x00000000040192c0                mat_mario_hair_v3_001
+                0x0000000004019300                mat_mario_mustache_v3_001
+                0x0000000004019368                mat_revert_mario_face_0___eye_open_v3_001
+                0x0000000004019380                mat_mario_face_0___eye_open_v3_001
+                0x0000000004019408                mat_revert_mario_cap_v3
+                0x0000000004019420                mat_mario_cap_v3
+                0x00000000040194a8                mat_revert_mario_metal_v3_001
+                0x00000000040194c0                mat_mario_metal_v3_001
+                0x0000000004019510                mat_mario_body_v3
+                0x0000000004019578                mario_000_displaylist_005_mesh_layer_1_tri_0
+                0x0000000004019660                mario_000_displaylist_005_mesh_layer_1_vtx_0
+                0x0000000004019820                mario_000_offset_013_mesh_layer_1_tri_0
+                0x00000000040198d0                mario_000_offset_013_mesh_layer_1_vtx_0
+                0x0000000004019990                mario_000_offset_012_mesh_layer_1_tri_0
+                0x0000000004019a98                mario_000_offset_012_mesh_layer_1_vtx_0
+                0x0000000004019bf8                mario_000_offset_011_mesh_layer_1_tri_0
+                0x0000000004019ce0                mario_000_offset_011_mesh_layer_1_vtx_0
+                0x0000000004019eb0                mario_000_offset_010_mesh_layer_1_tri_0
+                0x0000000004019f60                mario_000_offset_010_mesh_layer_1_vtx_0
+                0x000000000401a020                mario_000_offset_009_mesh_layer_1_tri_0
+                0x000000000401a128                mario_000_offset_009_mesh_layer_1_vtx_0
+                0x000000000401a288                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4_tri_1
+                0x000000000401a2b8                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4_vtx_1
+                0x000000000401a338                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4_tri_0
+                0x000000000401a368                mario_006_switch_option_left_hand_wing_cap_wings_mesh_layer_4_vtx_0
+                0x000000000401a3e8                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_tri_2
+                0x000000000401a578                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_vtx_2
+                0x000000000401a7b8                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_tri_1
+                0x000000000401a808                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_vtx_1
+                0x000000000401a8a8                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_tri_0
+                0x000000000401aa30                mario_006_switch_option_left_hand_wing_cap_mesh_layer_1_vtx_0
+                0x000000000401ad90                mario_005_switch_option_left_hand_cap_mesh_layer_1_tri_2
+                0x000000000401af20                mario_005_switch_option_left_hand_cap_mesh_layer_1_vtx_2
+                0x000000000401b160                mario_005_switch_option_left_hand_cap_mesh_layer_1_tri_1
+                0x000000000401b1b0                mario_005_switch_option_left_hand_cap_mesh_layer_1_vtx_1
+                0x000000000401b250                mario_005_switch_option_left_hand_cap_mesh_layer_1_tri_0
+                0x000000000401b3d8                mario_005_switch_option_left_hand_cap_mesh_layer_1_vtx_0
+                0x000000000401b738                mario_004_switch_option_left_hand_peace_mesh_layer_1_tri_0
+                0x000000000401b9c0                mario_004_switch_option_left_hand_peace_mesh_layer_1_vtx_0
+                0x000000000401bf00                mario_002_switch_option_left_hand_open_mesh_layer_1_tri_0
+                0x000000000401c128                mario_002_switch_option_left_hand_open_mesh_layer_1_vtx_0
+                0x000000000401c4b8                mario_000_displaylist_004_mesh_layer_1_tri_0
+                0x000000000401c648                mario_000_displaylist_004_mesh_layer_1_vtx_0
+                0x000000000401c888                mario_000_offset_007_mesh_layer_1_tri_0
+                0x000000000401c978                mario_000_offset_007_mesh_layer_1_vtx_0
+                0x000000000401ca78                mario_000_offset_006_mesh_layer_1_tri_0
+                0x000000000401cbb0                mario_000_offset_006_mesh_layer_1_vtx_0
+                0x000000000401cd70                mario_002_switch_option_right_hand_open_mesh_layer_1_tri_0
+                0x000000000401cf98                mario_002_switch_option_right_hand_open_mesh_layer_1_vtx_0
+                0x000000000401d338                mario_000_displaylist_003_mesh_layer_1_tri_0
+                0x000000000401d4c8                mario_000_displaylist_003_mesh_layer_1_vtx_0
+                0x000000000401d7a8                mario_000_offset_004_mesh_layer_1_tri_0
+                0x000000000401d898                mario_000_offset_004_mesh_layer_1_vtx_0
+                0x000000000401d998                mario_000_offset_003_mesh_layer_1_tri_0
+                0x000000000401dad0                mario_000_offset_003_mesh_layer_1_vtx_0
+                0x000000000401dcc0                mario_000_displaylist_002_mesh_layer_4_tri_1
+                0x000000000401dce0                mario_000_displaylist_002_mesh_layer_4_vtx_1
+                0x000000000401dd20                mario_000_displaylist_002_mesh_layer_4_tri_0
+                0x000000000401dd40                mario_000_displaylist_002_mesh_layer_4_vtx_0
+                0x000000000401dd80                mario_000_displaylist_001_mesh_layer_4_tri_1
+                0x000000000401dda0                mario_000_displaylist_001_mesh_layer_4_vtx_1
+                0x000000000401dde0                mario_000_displaylist_001_mesh_layer_4_tri_0
+                0x000000000401de00                mario_000_displaylist_001_mesh_layer_4_vtx_0
+                0x000000000401de50                mario_002_switch_option_head__no_cap__mesh_layer_1_tri_3
+                0x000000000401e138                mario_002_switch_option_head__no_cap__mesh_layer_1_vtx_3
+                0x000000000401e6f8                mario_002_switch_option_head__no_cap__mesh_layer_1_tri_2
+                0x000000000401e748                mario_002_switch_option_head__no_cap__mesh_layer_1_vtx_2
+                0x000000000401e808                mario_002_switch_option_head__no_cap__mesh_layer_1_tri_1
+                0x000000000401e8c0                mario_002_switch_option_head__no_cap__mesh_layer_1_vtx_1
+                0x000000000401eaa0                mario_002_switch_option_head__no_cap__mesh_layer_1_tri_0
+                0x000000000401ed98                mario_002_switch_option_head__no_cap__mesh_layer_1_vtx_0
+                0x000000000401f408                mario_000_displaylist_mesh_layer_1_tri_4
+                0x000000000401f5b0                mario_000_displaylist_mesh_layer_1_vtx_4
+                0x000000000401f940                mario_000_displaylist_mesh_layer_1_tri_3
+                0x000000000401f990                mario_000_displaylist_mesh_layer_1_vtx_3
+                0x000000000401fa50                mario_000_displaylist_mesh_layer_1_tri_2
+                0x000000000401fb40                mario_000_displaylist_mesh_layer_1_vtx_2
+                0x000000000401fd20                mario_000_displaylist_mesh_layer_1_tri_1
+                0x000000000401fdd8                mario_000_displaylist_mesh_layer_1_vtx_1
+                0x000000000401ff88                mario_000_displaylist_mesh_layer_1_tri_0
+                0x0000000004020280                mario_000_displaylist_mesh_layer_1_vtx_0
+                0x00000000040208e0                mario_000_offset_001_mesh_layer_1_tri_1
+                0x00000000040209c0                mario_000_offset_001_mesh_layer_1_vtx_1
+                0x0000000004020bb0                mario_000_offset_001_mesh_layer_1_tri_0
+                0x0000000004020ed8                mario_000_offset_001_mesh_layer_1_vtx_0
+                0x00000000040215c8                mario_000_offset_mesh_layer_1_tri_0
+                0x0000000004021838                mario_000_offset_mesh_layer_1_vtx_0
+                0x0000000004021cf8                mario_wing1_rgba16
+                0x0000000004022cf8                mario_wing1_rgba16_aligner
+                0x0000000004022d00                mario_wing_2_rgba16
+                0x0000000004023d00                mario_wing_2_rgba16_aligner
+                0x0000000004023d08                mario_New_Project1_ia8
+                0x0000000004024508                mario_New_Project1_ia8_aligner
+                0x0000000004024510                mario_New_Project2_ia8
+                0x0000000004024d10                mario_New_Project2_ia8_aligner
+                0x0000000004024d18                mario_New_Project3_pal_rgba16
+                0x0000000004024d90                mario_New_Project3_pal_rgba16_aligner
+                0x0000000004024d98                mario_New_Project3_ci8
+                0x0000000004025598                mario_New_Project3_ci8_aligner
+                0x00000000040255a0                mario_mario_sideburn_rgba16
+                0x0000000004025da0                mario_mario_sideburn_rgba16_aligner
+                0x0000000004025da8                mario_mario_mustache_rgba16
+                0x00000000040265a8                mario_mario_mustache_rgba16_aligner
+                0x00000000040265b0                mario_New_Project_pal_rgba16
+                0x0000000004026630                mario_New_Project_pal_rgba16_aligner
+                0x0000000004026638                mario_New_Project_ci8
+                0x0000000004026e38                mario_New_Project_ci8_aligner
+                0x0000000004026e40                mario_New_Project4_pal_rgba16
+                0x0000000004026e70                mario_New_Project4_pal_rgba16_aligner
+                0x0000000004026e78                mario_New_Project4_ci8
+                0x0000000004027678                mario_New_Project4_ci8_aligner
+                0x0000000004027680                mario_metal_rgba16
+                0x0000000004028680                mario_metal_rgba16_aligner
+                0x0000000004028688                mario_mario_button_rgba16
+                0x0000000004028e88                mario_mario_button_rgba16_aligner
+
+.data1
+ *(.data1)
+
+.got.plt
+ *(.got.plt)
+                0x0000000004028e90                . = .
+                0x0000000004028e90                . = .
+                0x0000000004030e80                _gp = (ALIGN (0x10) + 0x7ff0)
+
+.got
+ *(.got)
+
+.sdata
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+
+.lit8
+ *(.lit8)
+
+.lit4
+ *(.lit4)
+                0x0000000004028e90                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000004028e90                . = .
+                0x0000000004028e90                __bss_start = .
+                0x0000000004028e90                _fbss = .
+
+.sbss
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ *(.scommon)
+
+.bss            0x0000000004028e90        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000004028e90        0x0 build/us_n64/actors/group0.o
+ *(COMMON)
+                0x0000000004028e90                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000004028e90                . = ALIGN (0x4)
+                0x0000000004028e90                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000004028e90                . = ALIGN (0x4)
+                0x0000000004028e90                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000004028e90                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x25
+ *(.comment)
+ .comment       0x0000000000000000       0x25 build/us_n64/actors/group0.o
+                                         0x26 (size before relaxing)
+
+.pdr            0x0000000000000000        0x0
+ .pdr           0x0000000000000000        0x0 build/us_n64/actors/group0.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ *(.gnu.attributes)
+ .gnu.attributes
+                0x0000000000000000       0x10 build/us_n64/actors/group0.o
+
+.gptab.sdata
+ *(.gptab.data)
+ *(.gptab.sdata)
+
+.gptab.sbss
+ *(.gptab.bss)
+ *(.gptab.sbss)
+
+.mdebug.abi32   0x0000000000000000        0x0
+ *(.mdebug.abi32)
+ .mdebug.abi32  0x0000000000000000        0x0 build/us_n64/actors/group0.o
+
+.mdebug.abiN32
+ *(.mdebug.abiN32)
+
+.mdebug.abi64
+ *(.mdebug.abi64)
+
+.mdebug.abiO64
+ *(.mdebug.abiO64)
+
+.mdebug.eabi32
+ *(.mdebug.eabi32)
+
+.mdebug.eabi64
+ *(.mdebug.eabi64)
+
+.gcc_compiled_long32
+ *(.gcc_compiled_long32)
+
+.gcc_compiled_long64
+ *(.gcc_compiled_long64)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(build/us_n64/actors/group0.elf elf32-bigmips)
